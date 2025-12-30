@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello</title>
+
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        #typing {
+            color: black;
+            font-size: 20px;
+            white-space: pre-line;
+            display: inline-block;
+            border-right: 2px solid black;
+            padding-right: 5px;
+        }
+
+        /* Bottom link */
+        .bottom {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hi Januu 😊 💕</h1>
+
+    <!-- Typing text -->
+    <div id="typing"></div>
+
+    <!-- Bottom link -->
+    <div class="bottom">
+        <a href="new.html">👉 IKDE CLICK KAR GA CHIMNI</a>
+    </div>
+
+    <style="font-family:poppins"><script>
+        const text = 
+`Kay haal aahes? Sagla thik aahe na?
+Aree aik na, tujhyasathi ek chhotasa surprise aahe.
+Khaly mi ek link dili aahe, ti click kar 💙✨`;
+
+        let i = 0;
+        const speed = 60; // typing speed
+
+        function typeEffect() {
+            if (i < text.length) {
+                document.getElementById("typing").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, speed);
+            }
+        }
+
+        typeEffect();
+    </script></style>
+
+</body>
+</html>
